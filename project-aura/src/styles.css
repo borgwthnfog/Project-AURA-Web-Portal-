@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+:root{
+  --aura-blue: #1E4AFF;
+  --vital-red: #E31C52;
+  --bg-dark: #071226;
+  --glass: rgba(255,255,255,0.04);
+}
+
+*{box-sizing:border-box;margin:0;padding:0;font-family: 'Orbitron', sans-serif;}
+body{background:linear-gradient(180deg,var(--bg-dark),#071022);color:#e6eef8;min-height:100vh}
+.container{max-width:1100px;margin:0 auto;padding:28px}
+
+/* glass card */
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter: blur(6px);border:1px solid rgba(255,255,255,0.04);border-radius:14px;padding:20px}
+
+/* header */
+.header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{display:flex;gap:12px;align-items:center}
+.logo .symbol{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--vital-red),var(--aura-blue));box-shadow:0 8px 30px rgba(0,0,0,0.6) inset}
+.nav a{margin-left:18px;color:#e6eef8;text-decoration:none;opacity:0.9;font-weight:600}
+
+/* hero */
+.hero{display:flex;gap:24px;align-items:center;justify-content:space-between;padding:40px 0}
+.hero-left{flex:1}
+.h1{font-size:48px;line-height:1;color:var(--aura-blue);text-shadow:0 6px 30px rgba(30,74,255,0.12)}
+.h1 .crystal{background:linear-gradient(90deg,var(--vital-red),var(--aura-blue));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 8px 40px rgba(227,28,82,0.12))}
+
+/* sections */
+.section{padding:36px 0}
+.sec-title{font-size:28px;color:var(--aura-blue);margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+
+/* donate */
+.btn{display:inline-block;padding:12px 20px;border-radius:12px;text-decoration:none;color:#08101a;font-weight:700}
+.btn-donate{background:linear-gradient(90deg,var(--vital-red),#ff6b86);box-shadow:0 8px 30px rgba(227,28,82,0.12)}
+.btn-mail{background:linear-gradient(90deg,var(--aura-blue),#6fb3ff);box-shadow:0 8px 30px rgba(30,74,255,0.12)}
+
+/* footer */
+.footer{padding:30px 0;text-align:center;color:#9fb0d9;font-size:13px}
